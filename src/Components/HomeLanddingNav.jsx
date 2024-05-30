@@ -1,6 +1,11 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 
 function HomeLanddingNav() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/Login");
+  };
   return (
     <div class="container">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom border-black border-3">
@@ -42,7 +47,7 @@ function HomeLanddingNav() {
       </ul>
 
       <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-primary btn-outline-secondary me-2 text-white fw-bold border border-black border-2">Login</button>
+        <button type="button" onClick={handleClick} class="btn btn-primary btn-outline-secondary me-2 text-white fw-bold border border-black border-2">Login</button>
         <button type="button" class="btn btn-primary btn-outline-secondary text-white fw-bold border border-black border-2">Sign-up</button>
       </div>
     </header>
