@@ -28,3 +28,13 @@
     text-transform: uppercase;
     font-weight: bold;
 }
+
+.SignUp {
+    background-color: #4d90a1;
+    height: 100vh;
+}
+
+.SignUp-holder > .card {
+    background-color: #cdcbcb;
+    box-shadow: 0px 0px 10px 0px;
+}
